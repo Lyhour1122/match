@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt/Decrypt Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/Image/itelogo.jpg" alt="IT Logo">
+        <img src="/Image/rupp.png" alt="RUPP Logo">
+      </div>
+    </header>
+
+    <main>
+      <div class="cipher-box">
+        <h1>Encrypt and Decrypt Code</h1>
+
+        <div class="cipher-select">
+          <label for="cipherSelect">Choose Cipher:</label>
+          <select id="cipherSelect">
+            <option value="caesar">Caesar Cipher</option>
+            <option value="shift">General Shift Cipher</option>
+            <option value="affine">Affine Cipher</option>
+            <option value="transposition">Transposition Cipher</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <label for="textInput">Enter Message:</label>
+          <input type="text" id="textInput" placeholder="Enter your message here">
+        </div>
+
+        <div id="affineParams" class="cipher-params" style="display: none;">
+          <label for="a">Enter a (Affine Cipher):</label>
+          <input type="number" id="a" placeholder="a (Affine)">
+          <label for="b">Enter b (Affine Cipher):</label>
+          <input type="number" id="b" placeholder="b (Affine)">
+        </div>
+
+        <div id="shiftParam" class="cipher-params" style="display: none;">
+          <label for="shift">Enter Shift (General Shift Cipher):</label>
+          <input type="number" id="shift" placeholder="Shift Value">
+        </div>
+
+        <div class="buttons">
+          <button class="encrypt" onclick="handleEncrypt()">Encrypt</button>
+          <button class="decrypt" onclick="handleDecrypt()">Decrypt</button>
+        </div>
+
+        <div class="result" id="resultBox"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

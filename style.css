@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header .logo img {
+    max-height: 50px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cipher-select {
+    margin-bottom: 20px;
+}
+
+.cipher-select select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cipher-params {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cipher-params input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.encrypt {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.encrypt:hover {
+    background-color: #0056b3;
+}
+
+.decrypt {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.decrypt:hover {
+    background-color: #b21f2d;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    min-height: 40px;
+}
